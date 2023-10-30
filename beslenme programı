@@ -1,0 +1,66 @@
+% Kişisel Bilgiler
+kisi(yas, cinsiyet, kilo, hedef_kilo, aktivite_duzeyi, beslenme_tercihi, alerji).
+
+% Hedef kiloya ulaşmak için günlük kalori ihtiyacını hesapla
+hesapla_gunluk_kalori_ihtiyaci(Kalori) :-
+    kisi(Yas, Cinsiyet, Kilo, HedefKilo, Aktivite, _, _),
+    Cinsiyet == "erkek" -> BMR is 88.362 + (13.397 * Kilo) + (4.799 * Yas) - (5.677 * HedefKilo);
+    Cinsiyet == "kadın" -> BMR is 447.593 + (9.247 * Kilo) + (3.098 * Yas) - (4.330 * HedefKilo),
+    Aktivite == "sedanter" -> Kalori is BMR * 1.2;
+    Aktivite == "hafif" -> Kalori is BMR * 1.375;
+    Aktivite == "orta" -> Kalori is BMR * 1.55;
+    Aktivite == "ağır" -> Kalori is BMR * 1.725;
+    Aktivite == "çok ağır" -> Kalori is BMR * 1.9.
+
+% Beslenme programını oluştur
+beslenme_programi(YemekListesi) :-
+    hesapla_gunluk_kalori_ihtiyaci(Kalori),
+    Besinler = [elma, muz, tavuk, balık, sebzeler, meyveler, yogurt, süt, kepekli ekmek, pilav],
+    secenekler(Besinler, Kalori, YemekListesi).
+
+% Belirli bir kalori ihtiyacına göre besin seçeneklerini oluştur
+secenekler(_, 0, []) :- !.
+secenekler([], _, []) :- !.
+secenekler([Besin | Rest], Kalori, [Besin | YemekListesi]) :-
+    besin_kalori(Besin, KaloriBesin),
+    Kalori >= KaloriBesin,
+    YeniKalori is Kalori - KaloriBesin,
+    secenekler(Rest, YeniKalori, YemekListesi).
+secenekler([_ | Rest], Kalori, YemekListesi) :-
+    secenekler(Rest, Kalori, YemekListesi).
+
+% Besinlerin kalori değerlerini tanımla
+besin_kalori(elma, 52).
+besin_kalori(muz, 105).
+besin_kalori(tavuk, 335).
+besin_kalori(balık, 206).
+besin_kalori(sebzeler, 25).
+besin_kalori(meyveler, 60).
+besin_kalori(yogurt, 150).
+besin_kalori(süt, 103).
+besin_kalori(kepekli ekmek, 65).
+besin_kalori(pilav, 150).
+
+% Kullanıcıdan girdileri al ve beslenme programını oluştur
+main :- 
+    write('Yaşınızı girin: '),
+    read(Yas),
+    write('Cinsiyetinizi girin (erkek/kadın): '),
+    read(Cinsiyet),
+    write('Kilonuzu girin (kg): '),
+    read(Kilo),
+    write('Hedef kilonuzu girin (kg): '),
+    read(HedefKilo),
+    write('Günlük aktivite düzeyinizi girin (sedanter/hafif/orta/ağır/çok ağır): '),
+    read(Aktivite),
+    write('Beslenme tercihinizi girin: '),
+    read(BeslenmeTercihi),
+    write('Alerjiniz var mı? (var/yok): '),
+    read(Alerji),
+    assert(kisi(Yas, Cinsiyet, Kilo, HedefKilo, Aktivite, BeslenmeTercihi, Alerji)),
+    beslenme_programi(YemekListesi),
+    write('Günlük beslenme programınız: '),
+    write(YemekListesi),
+    retract(kisi(Yas, Cinsiyet, Kilo, HedefKilo, Aktivite, BeslenmeTercihi, Alerji)).
+
+Başka kişisel bilgileri dikkate almak ve daha karmaşık bir program geliştirmek mümkün. Bu örnek, Prolog kullanarak kişiselleştirilmiş bir beslenme programı oluşturmanıza yardımcı olabilir.
