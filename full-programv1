@@ -1,0 +1,82 @@
+% Kullanıcı bilgileri
+kullanici(bay).
+yas(30).
+kilo(80).
+boy(175).
+hedef(kas_gelisimi).
+
+% Beslenme programı
+beslenme_programi :-
+    kullanici(Cinsiyet),
+    yas(Yas),
+    kilo(Kilo),
+    boy(Boy),
+    hedef(Hedef),
+    BasitHedef = hedef,
+    Hedef = kas_gelisimi,
+    Hedef = kilo_verme,
+    Hedef = genel_saglik,
+    Hedef = metabolizma_artirimi,
+    Hedef = kilo_alma,
+    write('Beslenme Programiniz:'), nl,
+    (Cinsiyet = bay, write('Kahvalti: Yulaf ezmesi, yumurta, tam tahıllı ekmek.'), nl;
+     Cinsiyet = bayan, write('Kahvalti: Yulaf ezmesi, yoğurt, meyve.'), nl),
+    write('Ara ogun: Protein bar veya meyve.'), nl,
+    write('Öğle: Izgara tavuk, sebzeler, esmer pirinç.'), nl,
+    write('Ara ogun: Yoğurt veya fındık.'), nl,
+    write('Aksam: Izgara somon, quinoa, sebzeler.'), nl,
+    write('Ara ogun: Az yağlı süt veya meyve.'), nl,
+    (BasitHedef = hedef, write('Içme suyu: Günde en az 2 litre su icin.'), nl; true).
+
+% Egzersiz programı
+egzersiz_programi :-
+    kullanici(Cinsiyet),
+    yas(Yas),
+    kilo(Kilo),
+    boy(Boy),
+    hedef(Hedef),
+    write('Egzersiz Programiniz:'), nl,
+    (Hedef = kas_gelisimi, 
+    (Cinsiyet = bay, write('Gün 1: Göğüs ve Triceps'), nl;
+     Cinsiyet = bayan, write('Gün 1: Göğüs ve Triceps (hafif ağırlıklarla)'), nl),
+    write('Gün 2: Sırt ve Biceps'), nl,
+    write('Gün 3: Bacaklar ve Karın'), nl,
+    write('Gün 4: Dinlenme'), nl,
+    write('Gün 5: Omuz ve Traps'), nl,
+    write('Gün 6: Kardiyo (örneğin koşu)'), nl,
+    write('Gün 7: Dinlenme'), nl;
+    Hedef = kilo_verme, 
+    (Cinsiyet = bay, write('Gün 1: Kardiyo (örneğin koşu)'), nl;
+     Cinsiyet = bayan, write('Gün 1: Kardiyo (örneğin koşu)'), nl),
+    write('Gün 2: Sırt ve Bacaklar'), nl,
+    write('Gün 3: Kardiyo (örneğin bisiklet sürme)'), nl,
+    write('Gün 4: Dinlenme'), nl,
+    write('Gün 5: Göğüs ve Triceps'), nl,
+    write('Gün 6: Kardiyo (örneğin yüzme)'), nl,
+    write('Gün 7: Dinlenme'), nl;
+    Hedef = genel_saglik,
+    write('Gün 1: Kardiyo (örneğin yürüyüş)'), nl,
+    write('Gün 2: Kardiyo (örneğin bisiklet sürme)'), nl,
+    write('Gün 3: Kardiyo (örneğin koşu)'), nl,
+    write('Gün 4: Dinlenme'), nl,
+    write('Gün 5: Vücut ağırlığı egzersizleri (örneğin şınav)'), nl,
+    write('Gün 6: Kardiyo (örneğin yüzme)'), nl,
+    write('Gün 7: Dinlenme'), nl;
+    Hedef = metabolizma_artirimi, 
+    (Cinsiyet = bay, write('Gün 1: Kardiyo (örneğin koşu)'), nl;
+     Cinsiyet = bayan, write('Gün 1: Kardiyo (örneğin koşu)'), nl),
+    write('Gün 2: Sırt ve Bacaklar'), nl,
+    write('Gün 3: Kardiyo (örneğin bisiklet sürme)'), nl,
+    write('Gün 4: Dinlenme'), nl,
+    write('Gün 5: Göğüs ve Triceps'), nl,
+    write('Gün 6: Kardiyo (örneğin yüzme)'), nl,
+    write('Gün 7: Dinlenme'), nl;
+    Hedef = kilo_alma,
+    (Cinsiyet = bay, write('Gün 1: Göğüs ve Triceps'), nl;
+     Cinsiyet = bayan, write('Gün 1: Göğüs ve Triceps (hafif ağırlıklarla)'), nl),
+    write('Gün 2: Sırt ve Biceps'), nl,
+    write('Gün 3: Bacaklar ve Karın'), nl,
+    write('Gün 4: Dinlenme'), nl,
+    write('Gün 5: Omuz ve Traps'), nl,
+    write('Gün 6: Kardiyo (örneğin bisiklet sürme)'), nl,
+    write('Gün 7: Dinlenme'), nl).
