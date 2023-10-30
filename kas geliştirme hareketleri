@@ -77,7 +77,24 @@ hareket_kullanimi(leg_curl, agirlikli).
 % Hareketlerin açıklamaları
 hareket_aciklamasi(squat, 'Squat, bacak kaslarını (quadriceps, hamstrings, glutes, calves) hedefleyen bir bacak egzersizidir. Ağırlıklı olarak ağırlık kullanılır ve dizlerinizi bükmek ve ardından yavaşça doğrultmak temel prensiptir.').
 hareket_aciklamasi(bench_press, 'Bench press, göğüs kaslarını hedefleyen bir üst vücut egzersizidir. Sırtüstü yatarken barbell veya dumbbell ile ağırlık kaldırmayı içerir.').
+hareket_aciklamasi(deadlift, 'Deadlift, bel, kalça ve bacak kaslarını hedefleyen bir tam vücut egzersizidir. Barbell veya dumbbell ile yere eğilip doğrulmayı içerir.').
+hareket_aciklamasi(shoulder_press, 'Shoulder press, omuz kaslarını hedefleyen bir üst vücut egzersizidir. Ağırlıklı olarak ağırlık kaldırmayı içerir.').
 hareket_aciklamasi(pull_up, 'Pull-up, sırt ve biceps kaslarını hedefleyen bir üst vücut egzersizidir. Bir çubuk üzerinde vücut ağırlığınızı çekerek yapılır.').
+hareket_aciklamasi(bicep_curl, 'Bicep curl, biceps kaslarını hedefleyen bir kol egzersizidir. Dumbbell veya barbell ile yapılan bir izole egzersizdir.').
+hareket_aciklamasi(tricep_extension, 'Tricep extension, triceps kaslarını hedefleyen bir kol egzersizidir. Dumbbell veya barbell ile yapılan bir izole egzersizdir.').
+hareket_aciklamasi(leg_press, 'Leg press, bacak kaslarını (quadriceps, hamstrings, glutes, calves) hedefleyen bir bacak egzersizidir. Makine kullanılarak yapılır.').
+hareket_aciklamasi(chin_up, 'Chin-up, sırt ve biceps kaslarını hedefleyen bir üst vücut egzersizidir. Bir çubuk üzerinde vücut ağırlığınızı çekerek yapılır.').
+hareket_aciklamasi(hip_thrust, 'Hip thrust, kalça ve bacak kaslarını hedefleyen bir bacak egzersizidir. Ağırlık kullanılarak yapılır.').
+hareket_aciklamasi(shoulder_fly, 'Shoulder fly, omuz kaslarını hedefleyen bir üst vücut egzersizidir. Dumbbell veya makine kullanılarak yapılır.').
+hareket_aciklamasi(calf_raise, 'Calf raise, calf kaslarını hedefleyen bir bacak egzersizidir. Dumbbell veya makine kullanılarak yapılır.').
+hareket_aciklamasi(lunges, 'Lunges, bacak kaslarını (quadriceps, hamstrings, glutes) hedefleyen bir bacak egzersizidir. Dumbbell ile yapılır ve ileri-geri adımlar atmayı içerir.').
+hareket_aciklamasi(barbell_row, 'Barbell row, sırt ve biceps kaslarını hedefleyen bir sırt egzersizidir. Barbell ile yapılır ve ağırlık çekmeyi içerir.').
+hareket_aciklamasi(incline_bench_press, 'Incline bench press, üst göğüs ve omuz kaslarını hedefleyen bir üst vücut egzersizidir. Bench press benzeri bir hareketi içerir.').
+hareket_aciklamasi(push_up, 'Push-up, göğüs, triceps ve omuz kaslarını hedefleyen bir üst vücut egzersizidir. Vücut ağırlığı kullanılarak yapılır.').
+hareket_aciklamasi(pulldown, 'Pulldown, sırt ve biceps kaslarını hedefleyen bir sırt egzersizidir. Makine ile yapılan bir egzersizdir.').
+hareket_aciklamasi(seated_row, 'Seated row, sırt ve biceps kaslarını hedefleyen bir sırt egzersizidir. Makine ile yapılan bir egzersizdir.').
+hareket_aciklamasi(arm_curl, 'Arm curl, biceps kaslarını hedefleyen bir kol egzersizidir. Dumbbell veya barbell ile yapılan bir izole egzersizdir.').
+hareket_aciklamasi(leg_curl, 'Leg curl, bacak kaslarını (hamstrings) hedefleyen bir bacak egzersizidir. Makine ile yapılır.').
 % Diğer hareketlerin açıklamalarını da ekleyebilirsiniz.
 
 % Hareketlerin zorluk seviyeleri
