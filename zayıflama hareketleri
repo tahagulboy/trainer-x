@@ -1,0 +1,26 @@
+% Zayıflama Amaçlı Hareketler
+zayiflama_hareketi(kardiyo_egzersizi).
+zayiflama_hareketi(plank).
+zayiflama_hareketi(burpee).
+zayiflama_hareketi(jogging).
+zayiflama_hareketi(skip_atlayışı).
+zayiflama_hareketi(yüzme).
+zayiflama_hareketi(kalori_yakma_egzersizi).
+
+% Hareketin türleri
+hareket_turu(kardiyo_egzersizi, kardiyo).
+hareket_turu(plank, karın ve çekirdek kasları).
+hareket_turu(burpee, tam vücut).
+hareket_turu(jogging, kardiyo).
+hareket_turu(skip_atlayışı, kardiyo).
+hareket_turu(yüzme, kardiyo).
+hareket_turu(kalori_yakma_egzersizi, kardiyo).
+
+% Hareketin etkileri
+etki(kardiyo_egzersizi, kalori_yakma).
+etki(plank, karın ve çekirdek kasları güçlenmesi).
+etki(burpee, tam vücut antrenmanı).
+etki(jogging, kalori yaktırma).
+etki(skip_atlayışı, kardiyo ve kalori yaktırma).
+etki(yüzme, vücut tonlama ve kalori yaktırma).
+etki(kalori_yakma_egzersizi, kalori yaktırma).
