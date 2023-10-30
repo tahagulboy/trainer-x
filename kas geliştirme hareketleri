@@ -1,0 +1,35 @@
+% Kas Geliştirme Hareketleri
+kas_gelistirme_hareketi(squat).
+kas_gelistirme_hareketi(bench_press).
+kas_gelistirme_hareketi(deadlift).
+kas_gelistirme_hareketi(shoulder_press).
+kas_gelistirme_hareketi(pull_up).
+kas_gelistirme_hareketi(bicep_curl).
+kas_gelistirme_hareketi(tricep_extension).
+kas_gelistirme_hareketi(leg_press).
+kas_gelistirme_hareketi(chin_up).
+kas_gelistirme_hareketi(hip_thrust).
+
+% Hareketin hedeflediği kas grupları
+hedef_kas(squat, bacaklar).
+hedef_kas(bench_press, göğüs).
+hedef_kas(deadlift, sırt ve bacaklar).
+hedef_kas(shoulder_press, omuzlar).
+hedef_kas(pull_up, sırt ve biceps).
+hedef_kas(bicep_curl, biceps).
+hedef_kas(tricep_extension, triceps).
+hedef_kas(leg_press, bacaklar).
+hedef_kas(chin_up, sırt ve biceps).
+hedef_kas(hip_thrust, kalça).
+
+% Hareketin kullanımı
+hareket_kullanimi(squat, agirlikli).
+hareket_kullanimi(bench_press, agirlikli).
+hareket_kullanimi(deadlift, agirlikli).
+hareket_kullanimi(shoulder_press, agirlikli).
+hareket_kullanimi(pull_up, vücut_agirligi).
+hareket_kullanimi(bicep_curl, agirlikli).
+hareket_kullanimi(tricep_extension, agirlikli).
+hareket_kullanimi(leg_press, agirlikli).
+hareket_kullanimi(chin_up, vücut_agirligi).
+hareket_kullanimi(hip_thrust, agirlikli).
