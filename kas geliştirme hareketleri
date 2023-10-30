@@ -73,3 +73,21 @@ hareket_kullanimi(pulldown, agirlikli).
 hareket_kullanimi(seated_row, agirlikli).
 hareket_kullanimi(arm_curl, agirlikli).
 hareket_kullanimi(leg_curl, agirlikli).
+
+% Hareketlerin açıklamaları
+hareket_aciklamasi(squat, 'Squat, bacak kaslarını (quadriceps, hamstrings, glutes, calves) hedefleyen bir bacak egzersizidir. Ağırlıklı olarak ağırlık kullanılır ve dizlerinizi bükmek ve ardından yavaşça doğrultmak temel prensiptir.').
+hareket_aciklamasi(bench_press, 'Bench press, göğüs kaslarını hedefleyen bir üst vücut egzersizidir. Sırtüstü yatarken barbell veya dumbbell ile ağırlık kaldırmayı içerir.').
+hareket_aciklamasi(pull_up, 'Pull-up, sırt ve biceps kaslarını hedefleyen bir üst vücut egzersizidir. Bir çubuk üzerinde vücut ağırlığınızı çekerek yapılır.').
+% Diğer hareketlerin açıklamalarını da ekleyebilirsiniz.
+
+% Hareketlerin zorluk seviyeleri
+hareket_zorlugu(squat, baslangic).
+hareket_zorlugu(bench_press, orta).
+hareket_zorlugu(pull_up, ileri).
+% Diğer hareketlerin zorluk seviyelerini de ekleyebilirsiniz.
+
+% Hareketlerin video bağlantıları
+hareket_video(squat, 'https://www.youtube.com/watch?v=example_squat_video').
+hareket_video(bench_press, 'https://www.youtube.com/watch?v=example_bench_press_video').
+hareket_video(pull_up, 'https://www.youtube.com/watch?v=example_pull_up_video').
+% Diğer hareketlerin video bağlantılarını da ekleyebilirsiniz
