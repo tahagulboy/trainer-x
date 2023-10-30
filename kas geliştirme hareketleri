@@ -100,11 +100,46 @@ hareket_aciklamasi(leg_curl, 'Leg curl, bacak kaslarını (hamstrings) hedefleye
 % Hareketlerin zorluk seviyeleri
 hareket_zorlugu(squat, baslangic).
 hareket_zorlugu(bench_press, orta).
+hareket_zorlugu(deadlift, ileri).
+hareket_zorlugu(shoulder_press, orta).
 hareket_zorlugu(pull_up, ileri).
+hareket_zorlugu(bicep_curl, baslangic).
+hareket_zorlugu(tricep_extension, baslangic).
+hareket_zorlugu(leg_press, orta).
+hareket_zorlugu(chin_up, ileri).
+hareket_zorlugu(hip_thrust, orta).
+hareket_zorlugu(shoulder_fly, ileri).
+hareket_zorlugu(calf_raise, orta).
+hareket_zorlugu(lunges, orta).
+hareket_zorlugu(barbell_row, orta).
+hareket_zorlugu(incline_bench_press, orta).
+hareket_zorlugu(push_up, baslangic).
+hareket_zorlugu(pulldown, orta).
+hareket_zorlugu(seated_row, orta).
+hareket_zorlugu(arm_curl, baslangic).
+hareket_zorlugu(leg_curl, orta).
 % Diğer hareketlerin zorluk seviyelerini de ekleyebilirsiniz.
 
 % Hareketlerin video bağlantıları
 hareket_video(squat, 'https://www.youtube.com/watch?v=example_squat_video').
 hareket_video(bench_press, 'https://www.youtube.com/watch?v=example_bench_press_video').
+hareket_video(deadlift, 'https://www.youtube.com/watch?v=example_deadlift_video').
+hareket_video(shoulder_press, 'https://www.youtube.com/watch?v=example_shoulder_press_video').
 hareket_video(pull_up, 'https://www.youtube.com/watch?v=example_pull_up_video').
-% Diğer hareketlerin video bağlantılarını da ekleyebilirsiniz
+hareket_video(bicep_curl, 'https://www.youtube.com/watch?v=example_bicep_curl_video').
+hareket_video(tricep_extension, 'https://www.youtube.com/watch?v=example_tricep_extension_video').
+hareket_video(leg_press, 'https://www.youtube.com/watch?v=example_leg_press_video').
+hareket_video(chin_up, 'https://www.youtube.com/watch?v=example_chin_up_video').
+hareket_video(hip_thrust, 'https://www.youtube.com/watch?v=example_hip_thrust_video').
+hareket_video(shoulder_fly, 'https://www.youtube.com/watch?v=example_shoulder_fly_video').
+hareket_video(calf_raise, 'https://www.youtube.com/watch?v=example_calf_raise_video').
+hareket_video(lunges, 'https://www.youtube.com/watch?v=example_lunges_video').
+hareket_video(barbell_row, 'https://www.youtube.com/watch?v=example_barbell_row_video').
+hareket_video(incline_bench_press, 'https://www.youtube.com/watch?v=example_incline_bench_press_video').
+hareket_video(push_up, 'https://www.youtube.com/watch?v=example_push_up_video').
+hareket_video(pulldown, 'https://www.youtube.com/watch?v=example_pulldown_video').
+hareket_video(seated_row, 'https://www.youtube.com/watch?v=example_seated_row_video').
+hareket_video(arm_curl, 'https://www.youtube.com/watch?v=example_arm_curl_video').
+hareket_video(leg_curl, 'https://www.youtube.com/watch?v=example_leg_curl_video').
+% Diğer hareketlerin video bağlantılarını da ekleyebilirsiniz.
+
