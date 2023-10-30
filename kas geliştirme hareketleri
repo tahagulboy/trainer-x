@@ -12,6 +12,13 @@ kas_gelistirme_hareketi(hip_thrust).
 kas_gelistirme_hareketi(shoulder_fly).
 kas_gelistirme_hareketi(calf_raise).
 kas_gelistirme_hareketi(lunges).
+kas_gelistirme_hareketi(barbell_row).
+kas_gelistirme_hareketi(incline_bench_press).
+kas_gelistirme_hareketi(push_up).
+kas_gelistirme_hareketi(pulldown).
+kas_gelistirme_hareketi(seated_row).
+kas_gelistirme_hareketi(arm_curl).
+kas_gelistirme_hareketi(leg_curl).
 
 % Kas grupları ve altındaki kaslar
 kas_grubu(bacaklar, quadriceps, hamstrings, glutes, calves).
@@ -37,6 +44,13 @@ hedef_kas(hip_thrust, glutes, hamstrings).
 hedef_kas(shoulder_fly, deltoids).
 hedef_kas(calf_raise, calves).
 hedef_kas(lunges, quadriceps, hamstrings, glutes).
+hedef_kas(barbell_row, lats, biceps).
+hedef_kas(incline_bench_press, chest, shoulders).
+hedef_kas(push_up, chest, triceps, shoulders).
+hedef_kas(pulldown, lats, biceps).
+hedef_kas(seated_row, lats, biceps).
+hedef_kas(arm_curl, biceps).
+hedef_kas(leg_curl, hamstrings).
 
 % Hareketin kullanımı
 hareket_kullanimi(squat, agirlikli).
@@ -52,3 +66,10 @@ hareket_kullanimi(hip_thrust, agirlikli).
 hareket_kullanimi(shoulder_fly, agirlikli).
 hareket_kullanimi(calf_raise, agirlikli).
 hareket_kullanimi(lunges, vucut_agirligi).
+hareket_kullanimi(barbell_row, agirlikli).
+hareket_kullanimi(incline_bench_press, agirlikli).
+hareket_kullanimi(push_up, vucut_agirligi).
+hareket_kullanimi(pulldown, agirlikli).
+hareket_kullanimi(seated_row, agirlikli).
+hareket_kullanimi(arm_curl, agirlikli).
+hareket_kullanimi(leg_curl, agirlikli).
