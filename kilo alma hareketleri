@@ -1,0 +1,24 @@
+% Kilo Alma Amaçlı Hareketler
+kilo_alma_hareketi(agirlikli_kuvvet_antrenmani).
+kilo_alma_hareketi(beslenme_danismanligi).
+kilo_alma_hareketi(squat).
+kilo_alma_hareketi(deadlift).
+kilo_alma_hareketi(bench_press).
+kilo_alma_hareketi(overhead_press).
+kilo_alma_hareketi(yatay_sirt_egzersizi).
+kilo_alma_hareketi(chin_up).
+kilo_alma_hareketi(dips).
+kilo_alma_hareketi(bicep_curl).
+kilo_alma_hareketi(tricep_extension).
+
+% Hareketin kullanımı
+hareket_kullanimi(agirlikli_kuvvet_antrenmani, agirlikli).
+hareket_kullanimi(squat, agirlikli).
+hareket_kullanimi(deadlift, agirlikli).
+hareket_kullanimi(bench_press, agirlikli).
+hareket_kullanimi(overhead_press, agirlikli).
+hareket_kullanimi(yatay_sirt_egzersizi, agirlikli).
+hareket_kullanimi(chin_up, vucut_agirligi).
+hareket_kullanimi(dips, vucut_agirligi).
+hareket_kullanimi(bicep_curl, agirlikli).
+hareket_kullanimi(tricep_extension, agirlikli).
