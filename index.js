@@ -101,6 +101,44 @@ function AnaSayfa() {
         </div>
         <button type="submit" className="btn btn-primary">Fitness Programını Oluştur</button>
       </form>
+
+function generateFitnessProgrami(isim, yas, kilo, boy, hedef) {
+  // Hedefe göre program oluşturun
+  switch (hedef) {
+    case "kilo-vermek":
+      return {
+        pazartesi: ["1 saat koşu", "30 dakika ağırlık çalışması"],
+        sali: ["30 dakika yoga", "30 dakika kardiyo"],
+        carsamba: ["Dinlenme"],
+        persembe: ["30 dakika yüzme", "30 dakika pilates"],
+        cuma: ["1 saat bisiklet", "30 dakika serbest ağırlık çalışması"],
+        cumartesi: ["30 dakika dans", "30 dakika yoga"],
+        pazar: ["Dinlenme"],
+      };
+    case "kas-yapmak":
+      return {
+        pazartesi: ["1 saat ağırlık çalışması"],
+        sali: ["30 dakika yoga", "30 dakika kardiyo"],
+        carsamba: ["Dinlenme"],
+        persembe: ["30 dakika yüzme", "30 dakika pilates"],
+        cuma: ["1 saat ağırlık çalışması"],
+        cumartesi: ["30 dakika serbest ağırlık çalışması", "30 dakika kardiyo"],
+        pazar: ["Dinlenme"],
+      };
+    case "fit-olmak":
+      return {
+        pazartesi: ["30 dakika koşu", "30 dakika ağırlık çalışması"],
+        sali: ["30 dakika yoga", "30 dakika kardiyo"],
+        carsamba: ["Dinlenme"],
+        persembe: ["30 dakika yüzme", "30 dakika pilates"],
+        cuma: ["1 saat bisiklet", "30 dakika serbest ağırlık çalışması"],
+        cumartesi: ["30 dakika dans", "30 dakika yoga"],
+        pazar: ["30 dakika koşu", "30 dakika kardiyo"],
+      };
+    default:
+      return null;
+  }
+}
     </div>
   );
 }
