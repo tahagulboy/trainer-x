@@ -1,4 +1,4 @@
 # aitranor
-an artificial intelligence program that prepares an exercise and nutrition program according to a person's characteristics
+fitness coach expert system
 
-kişinin özelliklerine göre egzersiz ve beslenme programı hazırlayan yapay zeka programı
+fitness koçu uzman sistem
