@@ -1,7 +1,8 @@
-# aitranor
+# TrainerX
 fitness coach expert system
 
 fitness koçu uzman sistem
 
-run server: ['trainerx.pl'].
-çalıştırmak için: ['trainerx.pl'].
+install swipl
+consult trainerx.pl
+run in terminal: ['trainerx.pl'].
