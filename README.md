@@ -1,10 +1,8 @@
 # TrainerX
 fitness coach expert system
 
-fitness koçu uzman sistem
-
-install swipl
-consult trainerx.pl
-run in terminal: ['trainerx.pl'].
+1. install swipl
+2. consult trainerx.pl
+3. run in terminal: ['trainerx.pl'].
 
 https://www.youtube.com/watch?v=svuexiNoyoI
