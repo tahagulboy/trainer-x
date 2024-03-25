@@ -1,4 +1,4 @@
-# TrainerX
+# trainer-x
 fitness coach expert system
 
 1. install swipl
